@@ -1,0 +1,4 @@
+# .pubignore overrides .gitignore for publishing.
+# Make sure the bin directory is included in the published package.
+!bin/
+!bin/**

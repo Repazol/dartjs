@@ -822,7 +822,7 @@ class Interpreter {
           for (var i = 0; i < node.arguments.length; i++) {
             params['${i + 1}'] = _evaluate(node.arguments[i], env);
           }
-          final result = _onCommand!(callee.name, params);
+          final result = _onCommand(callee.name, params);
           if (result.handled) return result.value;
         }
         rethrow;
@@ -883,7 +883,7 @@ class Interpreter {
           return '${e.key}:${_displayValue(val)}';
         })
         .join(',');
-    return '{${entries}}';
+    return '{$entries}';
   }
 
   dynamic _convertJsonValue(dynamic value) {

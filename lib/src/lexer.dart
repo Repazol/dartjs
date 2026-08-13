@@ -283,10 +283,11 @@ class Lexer {
           int depth = 1;
           final exprStart = _pos;
           while (_pos < source.length && depth > 0) {
-            if (source[_pos] == '{')
+            if (source[_pos] == '{') {
               depth++;
-            else if (source[_pos] == '}')
+            } else if (source[_pos] == '}') {
               depth--;
+            }
             if (depth > 0) _pos++;
           }
           final expr = source.substring(exprStart, _pos);
