@@ -2,9 +2,9 @@ name: dartjs
 description: >-
   A pure Dart scripting language interpreter inspired by JavaScript.
 version: 0.1.0
-repository: https://github.com/your-org/dartjs
-homepage: https://github.com/your-org/dartjs
-issue_tracker: https://github.com/your-org/dartjs/issues
+repository: https://github.com/Repazol/dartjs
+homepage: https://github.com/Repazol/dartjs
+issue_tracker: https://github.com/Repazol/dartjs/issues
 
 environment:
   sdk: ^3.9.2
