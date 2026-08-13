@@ -1,0 +1,13 @@
+var text = 'Hello, DartJS!';
+print('length:', text.length);
+print('upper:', text.toUpperCase());
+print('lower:', text.toLowerCase());
+print('trim:', '   hello world   '.trim());
+print('contains:', text.contains('DartJS'));
+print('replace:', text.replace('DartJS', 'World'));
+print('split:', 'id,name,email'.split(','));
+var user = { name: 'Alice', city: 'Moscow' };
+var msg = 'User ${user.name} from ${user.city}';
+print('interpolated:', msg);
+var sub = text.substr(7, 5);
+print('substr:', sub);
